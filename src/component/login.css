@@ -1,0 +1,11 @@
+.ss{
+    background-image: url("C:\Users\SightSpectrum\Desktop\html\images\light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;}
+
+
+#pap{
+    background-image: url("C:\Users\SightSpectrum\Desktop\html\images\light.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;}
