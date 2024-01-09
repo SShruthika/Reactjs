@@ -9,7 +9,13 @@ const useFetch = (url) => {
       .then((data) => setData(data));
   }, [url]);
 
-  return [data];
+  return(
+  <div>
+  [data];
+
+  <h1>git check</h1>
+  </div>
+  )
 };
 
 export default useFetch;
