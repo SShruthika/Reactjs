@@ -1,9 +1,9 @@
 
 import {Avatar, Button, FormControlLabel, Grid, Paper, TextField, Typography ,Link, Checkbox} from '@mui/material'
-// import LockPersonRoundedIcon from '@mui/icons-material/LockPersonRounded';
+    //  import LockPersonRoundedIcon from '@mui/icons-material/LockPersonRounded';
 import './login.css';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const paperStyle={ padding :20,height:'90vh',width:300, margin:"20px auto"}
@@ -13,7 +13,7 @@ const Login = () => {
   const [username, setUsername]= useState('');
   const [password, setPassword]= useState('');
 
-  const navigate =useNavigate()
+      //  const navigate =useNavigate()
 
   const handleUsernameChange =(event)=>{
     setUsername(event.target.value);
@@ -23,9 +23,8 @@ const Login = () => {
     
   };
   const hello = ()=>{
-    // alert("welcome  " + username)
-    navigate(`/Home/${username}`)
-
+    alert("welcome  " + username)
+    // navigate(`/Home/${username}`)
   }
   return (
 

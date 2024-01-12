@@ -1,22 +1,21 @@
-import { useState, useEffect } from "react";
+import { useState,  } from "react";
+const Customhooks= () => {
+  const [co, setCount] = useState(0);
 
-const useFetch = (url) => {
-  const [data, setData] = useState(null);
+  const increment =()=>{
+    setCount(prevstate =>prevstate+1)
 
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setData(data));
-  }, [url]);
+  }
+  
+  const decrement =()=>{
+    setCount(prevstate =>prevstate-1)
+  }
+  
+  const reset=()=>{
+    setCount(0)
 
-  return(
-  <div>
-  [data];
-
-  <h1>git check</h1>
-  </div>
-  )
-};
-
-export default useFetch;
+  }
+return[co,increment,decrement,reset]
+}
+export default Customhooks;
 

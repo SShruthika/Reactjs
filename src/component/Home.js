@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+// import React, { useEffect, useState } from 'react'
+// import { useParams } from 'react-router-dom'
 
-const Home = (props)=> {
+// const Home = (props)=> {
 
-  const [name,setUsername]=useState()
+//   const [name,setUsername]=useState()
 
-  const data=useParams()
+//   const data=useParams()
 
-  // console.log(data);
-  // console.log(name);
+//    console.log(data);
+//    console.log(name);
 
-  useEffect(()=>{
-    setUsername(data.names)
-  },[])
+//   useEffect(()=>{
+//     setUsername(data.names)
+//   },[])
   
-  return (
-    <h1>
-    
-      welcome {name}
-    
-    </h1>
-  )
-}
+//   return (
+//     <h1>
+//       welcome {name}
+//     </h1>
+//   )
+// }
 
-export default Home
+// export default Home

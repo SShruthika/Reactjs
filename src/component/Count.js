@@ -8,7 +8,7 @@ const Count = () => {
     console.log('component mounted / updated');
     console.log(msg);
     console.log('count is incresed to ',count);
-  },[])
+  },[count,msg])
   return (
     <div>
       <button onClick={()=>{setCount(count + 1)}}>increasecount</button>

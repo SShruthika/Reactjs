@@ -10,6 +10,9 @@
 // import './App.css';
 
 
+
+
+
 // import Renderprops from "./component/Renderprops";
 
 
@@ -20,17 +23,17 @@
 
 // import Axios from "./component/Axiso";
 
-// import Home from "./component/Customhooks"
 
-import Homes from "./component/Homes";
+import Login from "./component/login";
 function App() {
   return (
     <div>
-     <Homes/>
-
-      </div>);
+  
+<Login/>
+      </div>
+      );
       }
-export default App;
+// export default App;
 
 
 
@@ -53,7 +56,9 @@ export default App;
 //     </div>
 //   );
 // }
-// export default App;
+
+
+export default App;
 
 
 

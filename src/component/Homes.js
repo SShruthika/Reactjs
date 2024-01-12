@@ -1,16 +1,15 @@
-// import ReactDOM from "react-dom/client";
-import useFetch from "./Customhooks";
+import useCustomhooks from "./Customhooks"
 
-const Homes = () => {
-  const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
+const Homes=()=>{
+  const [co,increment,decrement,reset] = useCustomhooks()
+  return(
+ <div>
+<h2>count {co}</h2>
+<button onClick={increment}>increment</button>
+<button onClick={decrement}>decrement</button>
+<button onClick={reset}>reset</button>
+ </div>
+  )
+}
+export default Homes
 
-  return (
-    <>
-      {data &&
-        data.map((item) => {
-          return <p key={item.id}>{item.title}</p>;
-        })}
-    </>
-  );
-};
-export default Homes;
