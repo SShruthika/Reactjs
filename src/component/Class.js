@@ -4,9 +4,7 @@
 //       return <div>Hi shruthika</div>;
 //     }
 //   }
-
 // export default Car;
-
 
 let user = {
   name: "John",

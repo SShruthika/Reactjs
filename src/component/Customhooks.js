@@ -1,5 +1,6 @@
 import { useState,  } from "react";
-const Customhooks= () => {
+
+const useCustomhooks= () => {
   const [co, setCount] = useState(0);
 
   const increment =()=>{
@@ -17,5 +18,5 @@ const Customhooks= () => {
   }
 return[co,increment,decrement,reset]
 }
-export default Customhooks;
+export default useCustomhooks;
 

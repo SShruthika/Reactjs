@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Counter  = () => {
-    const[count,setCount]=useState('shru');
+    const[count,setCount]=useState(0);
     const[person,setPerson]=useState({firstName: '',lastName:''});
 
     const increase=()=>{
@@ -10,7 +10,7 @@ const Counter  = () => {
     }}
   return (
     <div>
-      <button onClick={()=>setCount('hari')}>click</button>
+      <button onClick={()=>setCount(count +1)}>click</button>
       <p>current value of count is {count}</p>
       <button onClick={()=>increase()}>click increase 5</button>
 <hr/>

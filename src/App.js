@@ -1,65 +1,58 @@
-// import ReactDOM from "react-dom/client";
+// // import ReactDOM from "react-dom/client";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Layout from "./pages/Layout";
-// import Home from "./component/Home";
-// import Blogs from "./pages/Blogs";
-// import Contact from "./pages/Contact";
-// import NoPage from "./pages/NoPage";
 // import Login from "./component/login";
-// import Test from "./component/Purecomponent";
-// import './App.css';
+// import Home from "./component/Home";
+// import Signup from "./Formik program/Signup";
+// import About from "./component/About";
+// import Contact from "./component/Contact";
+// import Homes from "./component/Homes";
+// // import Navbar from "./componen/t/Navbar";
 
-
-
-
-
-// import Renderprops from "./component/Renderprops";
-
-
-// import { List } from "@mui/material";
-
-// import MyComponent from "./component/conditional";
-// import Garage from "./component/list"
-
-// import Axios from "./component/Axiso";
-
-
-import Login from "./component/login";
-function App() {
-  return (
-    <div>
-  
-<Login/>
-      </div>
-      );
-      }
+// function App() {
+//    return (
+//      <div>
+// <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Login/>}></Route>
+//         <Route path="/Home/:names" element={<Home/>}/>
+//         {/* <Route path="/Navbar/" element={<Navbar/>}/> */}
+//         <Route path="/Homes/" element={<Homes/>}></Route>
+//         <Route path="/Signup/" element={<Signup/>}></Route>
+//        <Route path="/About/" element={<About/>}/>
+//           <Route path="/Contact/" element={<Contact/>} />
+// {/* <Route path="*" element={<NoPage />} /> */}
+//       </Routes>
+//     </BrowserRouter>
+//     </div>
+//    )
+// }
 // export default App;
 
 
+// import React from 'react'
+// import Portfolio from './component/imgapi/Api'
 
-// {/* <BrowserRouter>
-//       <Routes>
-//         <Route path="/" element={<Login/>}> </Route>
-//           <Route path="/Home/:names" element={<Home/>} /> */} 
-//           {/* <Route path="blogs" element={<Blogs />} />
-//           <Route path="contact" element={<Contact />} />
-//           <Route path="*" element={<NoPage />} /> */}
-//       {/* </Routes>
-//     </BrowserRouter> */}
-//     {/* <Test/> */}
-//   {/* <MyComponent/> */}
-//  {/* <Garage/> */}
-//  {/* <Renderprops render={({ x, y }) => (
-//       <p>Mouse position: {x}, {y}</p>
-//     )} /> */}
-//    <ItemList/>
+// const App = () => {
+//   return (
+//     <div>
+//       <Portfolio/>
 //     </div>
-//   );
+//   )
 // }
 
+// export default App
 
-export default App;
+import React from 'react'
+// import Renderprops from './component/Renderprops'
+import State from './component/State'
 
+const App = () => {
+  return (
+    <div>
+      <State/>
+    </div>
+  )
+}
 
-
+export default App
 

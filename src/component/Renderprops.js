@@ -20,17 +20,3 @@ class Renderprops extends React.Component {
   }
 }
 export default Renderprops;
-// // App.js
-// import React from 'react';
-// import Mouse from './Mouse';
-
-// const App = () => (
-//   <div>
-//     <h1>Render Props Example</h1>
-//     <Mouse render={({ x, y }) => (
-//       <p>Mouse position: {x}, {y}</p>
-//     )} />
-//   </div>
-// );
-
-// export default App;

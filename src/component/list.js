@@ -36,9 +36,9 @@ import React from 'react'
         <h1>LIST AND KEYS</h1>
         <ul>
           {
-          cars.map(data => (
+        //   cars.map(data => (
         // <li>{data.id}</li>))
-        {cars.map(() => <Car key={data.id} brand={data.brand} />)}
+       cars.map(data=>{key})
 
           }
         </ul>

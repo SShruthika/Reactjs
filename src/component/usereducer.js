@@ -1,7 +1,7 @@
 import React from 'react'
 import { useReducer } from 'react'
 
-const initialstate =0
+const initialstate = 0
 
 const reducer =(state,action)=>{
     switch(action)
@@ -24,5 +24,4 @@ const UseReducer = () => {
     </div>
   )
 }
-
 export default UseReducer
