@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Portfolio.css'; // Create a CSS file for your styles and import it here
-
 const Portfolio = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,7 +13,7 @@ const Portfolio = () => {
         <div className="logo">
           <a href="#">Logo.</a>
         </div>
-        <input type="checkbox" id="click" checked={menuOpen} onChange={handleMenuClick} />
+        <input type="checkbox" id="click" checked={menuOpen} onChange={handleMenuClick}/>
         <label htmlFor="click" className="mainicon">
           <div className="menu">
             <i className="bi bi-list"></i>

@@ -83,7 +83,8 @@ import "react-phone-number-input/style.css";
 import './Sign.css'
 import { signupSchema } from "./Yup";
 // import Navbar from "../component/Navbar";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 const initialValues = {
     name: "",
@@ -100,7 +101,7 @@ const initialValues = {
 // ...
 const Signup = () => {
     
-    // const navigate =useNavigate()
+    const navigate =useNavigate()
      
     // const hellos = ()=>{
     //     // alert("welcome  " + username)
@@ -109,9 +110,12 @@ const Signup = () => {
     //     navigate(`/Home/`)
     //   }
     
-    //   const helloss = ()=>{
-    //     navigate(`/Navbar/`)
-    //   }
+    
+  const helloss = () => {
+    navigate(`/Navbar`);
+  };
+
+
       
     const onSubmit = (values, actions) => {
         console.log(values);
@@ -188,7 +192,7 @@ const Signup = () => {
                             <ErrorMessage name="mobile" component="p" className='form_error' />
                         </div> */}
 
-                        <button  type='submit'>Submit</button>
+                        <button onClick={helloss} type='submit'>Submit</button>
                     </Form>
                 )}
             </Formik>
@@ -198,3 +202,4 @@ const Signup = () => {
 }
 
 export default Signup
+

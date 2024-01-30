@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const paperStyle={ padding :20,height:'100vh',width:300, margin:"20px auto"}
+  const paperStyle={ padding :20,height:'95vh',width:300, margin:"20px auto"}
   const avatarStyle={backgroundColor:"green"}
   const btnstyle={margin:'8px 0', backgroundColor:"black" ,color:"white"}
   

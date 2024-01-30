@@ -19,6 +19,9 @@ const Homes = () => {
   return (
     <div>
       <Navbar/>
+      <h1>
+        WELCOME
+      </h1>
       A plant is a living thing that grows in the earth and has a stem, leaves, and roots. Water each plant as often as required. ... exotic plants. Synonyms: flower, bush, vegetable, herb More Synonyms of plant.s
     </div>
   )

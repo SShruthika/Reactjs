@@ -3,19 +3,26 @@
     background-image: url("C:\Users\SightSpectrum\Desktop\html\images\light.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
 }
 
 #pap {
     background-image: url("C:\Users\SightSpectrum\Desktop\html\images\light.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    /* display: flex; */
+    display: block;
 }
 body{
     background-image: url("C:\Users\SightSpectrum\Desktop\html\images\plant11.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.login{
+    font-size: 2rem;
+    font-weight: 1000;
+    color:rgb(50, 190, 241)
+}
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +35,7 @@ body{
     align-items: center;
     height: 75px;
     color: white;
-    background-color: brown;
+    background-color: rgb(61, 11, 11);
 }
 
 .nav-links {
@@ -42,7 +49,10 @@ body{
 
 .home,
 .contact,
-.about {
+.about,
+.previous
+
+ {
     text-decoration: none;
     color: white;
     font-size: 20px;
