@@ -3,7 +3,7 @@ import {Button, Typography ,Link} from '@mui/material'
 import './Ats.css';
 import comp from '../Assest/comp.jpeg'
 import Atss from '../Assest/Atss.jpeg'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Ats = () => {
@@ -24,9 +24,21 @@ const Ats = () => {
   const hii = () => {
     // console.log(valuse);
     navigate('/Register');
+    console.log('Email:', email);
+    console.log('Password:', password);
 
   }
+  
+  // const hiii = (values) => {
+  //  navigate(`/welcome/${values.name}`);
+
+  // }
  
+  useEffect(() => {
+    console.log('Email:', email);
+    console.log('Password:', password);
+  }, [email, password]);
+
   return (
 
        <div className='container'>
@@ -68,7 +80,7 @@ const Ats = () => {
             </div>
             <br></br> 
               <div>
-             <Button className='btn'  type='submit' color='primary'  variant='contained' style={btnstyle}fullWidth>Log in</Button>
+             <Button  className='btn'  type='submit' color='primary'  variant='contained' style={btnstyle}fullWidth>Log in</Button>
              </div>
 
             <div>

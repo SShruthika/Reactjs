@@ -6,7 +6,7 @@ import './Register.css';
 import comp from '../Assest/comp.jpeg'
 import Atss from '../Assest/Atss.jpeg'
 import { signupSchema } from "./Registeryup.js";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 const initialValues = {
@@ -20,11 +20,11 @@ const initialValues = {
 
 const Register = () => {
     
-    const navigate =useNavigate()
+    // const navigate =useNavigate()
 
-const hi = (values)=>{
-    navigate(`/welcome/${values.name}`);
-  }
+// const hi = (values)=>{
+//     navigate(`/welcome/${values.name}`);
+//   }
       
     const onSubmit = (values, actions) => {
         console.log(values);
@@ -103,7 +103,7 @@ const hi = (values)=>{
                             )}
                         </div>
 
-                        <button onClick={hi} type='submit'>Register</button> </div>
+                        <button  type='submit'>Register</button> </div>
                     </Form>
                 )}
                 
