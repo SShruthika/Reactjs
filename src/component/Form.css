@@ -118,3 +118,63 @@ margin-left: 110px;
     display: initial;
   }
 }
+
+
+
+/* 
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;  
+  align-items: center;
+  margin: 50px; 
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 1;
+ border-radius: 8px;
+  padding: 10px;
+
+}
+
+.avatar {
+  background-color: green;
+}
+
+.btn {
+  margin: 8px 0;
+  background-color: black;
+  color: white;
+}
+
+.textField {
+  margin: 10px;
+  width: 220px;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.forgotPassword {
+  margin-top: 20px;
+}
+
+.haveAccount {
+  margin-top: 20px;
+} */

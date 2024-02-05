@@ -62,17 +62,29 @@
 
 
 import React from 'react'
-// import Header from './component/Project/Header'
-import Form from './component/Form'
-
+//  import ReactDOM from "react-dom/client";
+ import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Ats from './component/Ats.js'
+import Register from './component/Register.js';
+// import Register from './component/Rengister.js'
+import Welcome from './component/welcome.js';
+// import Crud from './component/Crud.js'
 const App = () => {
   return (
     <div>
-    {/* <div> */}
-      {/* <Header/> */}
-      <Form/>
+      <BrowserRouter>
+       <Routes>
+         <Route path="/" element={<Ats/>}></Route>
+         <Route path="/Register" element={<Register/>}/>
+         <Route path="/Welcome/:nameS" element={<Welcome/>}/>
+       </Routes>
+    </BrowserRouter>
+{/* <Form/.> */}
+      {/* <Crud/> */}
+      {/* <Register/> */}
+      {/* <Ats/> */}
+
     </div>
   )
 }
-
 export default App

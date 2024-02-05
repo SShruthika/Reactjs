@@ -1,0 +1,32 @@
+  .container {
+    display: flex;
+    align-items: center;
+    position:fixed;
+  }
+  
+  .col-1 {
+    display: flex;
+    flex: 1;
+    height: 585px;
+    object-fit: cover;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .col-2 {
+    flex: 1;
+    padding: 30px;
+    padding-left: 100px ;
+    box-sizing: border-box;
+    margin:50px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .btn{
+    padding: 5px;
+background-color: rgb(58, 160, 249);
+  }
+  

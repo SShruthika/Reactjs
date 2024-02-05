@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 // import { useForm } from 'react-hook-form';
 import './Form.css'
 import { Avatar } from '@mui/material';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
+import HowToRegIcon from '@mui/icons-material/HowTsoReg';
 import axios from 'axios';
 
 
@@ -37,7 +37,6 @@ function Form() {
         validationSchema: validationSchema,
         onSubmit: async(values) => {
           try {
-          
             const response = await axios.post('https://6593e3c01493b01160696195.mockapi.io/emploee', values);
             console.log(response.data); 
           } catch (error) {

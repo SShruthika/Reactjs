@@ -98,7 +98,7 @@ const Crud = () => {
         <input type="text" name="price" value={formData.price} onChange={handleChange} />
       </label>
       <br />
-      <label>
+      <label className='s'>
         Image URL :
         <input type="file" name="image" value={formData.img} onChange={handleChange} />
       </label>

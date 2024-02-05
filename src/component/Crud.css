@@ -2,24 +2,25 @@
 
 form {
     display: flex;
+    font-weight: bold;
+    font-size: 20px;
     flex-direction: column;
-    max-width: 400px;
-    background-image: url('C:\Users\SightSpectrum\Desktop\html\images\flo.jpg');
+    max-width: 500px;
+    background-image: url('C:\Users\SightSpectrum\Desktop\html\video.html\REACT\myapp\src\Assest\blue.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* margin: auto; */
     /* margin: 50px; */
-    padding: 50px;
+    padding: 30px;
     border: 5px solid #160515;
     border-radius: 5px;
     margin:auto;
-    margin-top: 30px;
+    margin-top: 50px;
   }
-  
   label {
     margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 30px;
+    /* font-weight: bold;
+    font-size: 20px; */
     
   }
   
@@ -28,13 +29,13 @@ form {
     /* margin: auto; */
     margin-bottom: 10px;
     padding: 5px;
-    width: auto;
+    width: 300px;
     
   }
   
   button {
     /* background-color: #4caf50; */
-    background-color: #0a1e0b;
+    background-color: #0b150b;
     color: white;
     padding: 10px;
     border: none;
