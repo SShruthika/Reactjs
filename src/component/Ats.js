@@ -4,7 +4,8 @@ import './Ats.css';
 import comp from '../Assest/comp.jpeg'
 import Atss from '../Assest/Atss.jpeg'
 import { useState,useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
+import axios from "axios"; // Import axios for making HTTP requests
 
 const Ats = () => {
   const btnstyle={margin:'8px 0',color:"white"}
@@ -13,6 +14,54 @@ const Ats = () => {
   const [password, setPassword]= useState('');
 
        const navigate =useNavigate()
+
+      //  const location = useLocation();
+
+       
+  // useEffect(() => {
+  //   // Retrieve email and password from URL parameters
+  //   const searchParams = new URLSearchParams(location.search);
+  //   const emailParam = searchParams.get('email');
+  //   const passwordParam = searchParams.get('password');
+
+  //   // Set the state with retrieved values
+  //   setemail(emailParam || '');
+  //   setPassword(passwordParam || '');
+  // }, [location.search]);
+
+
+
+//   useEffect(() => {
+//     // Retrieve registered user credentials from localStorage
+//     const storedUser = localStorage.getItem('registeredUser');
+
+//     if (storedUser) {
+//         const { email, password } = JSON.parse(storedUser);
+//         setemail(email || '');
+//         setPassword(password || '');
+//     }
+// }, []);
+
+const onSubmit = async () => {
+  try {
+      // Make an API call to your backend for user authentication
+      const response = await axios.get("https://6593e3c01493b01160696195.mockapi.io/emploee", { 
+        params:{email, password },
+      });
+
+      if (response.data.success) {
+          // Handle successful login
+          navigate(`/welcome/${response.data.user.name}`);
+      } else {
+          // Handle login failure
+          console.error("Login failed:", response.data.message);
+      }
+  } catch (error) {
+      console.error("API Error:", error);
+      // Handle API request error
+  }
+};
+
 
   const handleEmailChange =(event)=>{
     setemail(event.target.value);
@@ -24,15 +73,15 @@ const Ats = () => {
   const hii = () => {
     // console.log(valuse);
     navigate('/Register');
-    console.log('Email:', email);
-    console.log('Password:', password);
+    // console.log('Email:', email);
+    // console.log('Password:', password);
 
   }
   
-  // const hiii = (values) => {
-  //  navigate(`/welcome/${values.name}`);
+  const hiii = (values) => {
+   navigate(`/welcome/${values.name}`);
 
-  // }
+  }
  
   useEffect(() => {
     console.log('Email:', email);
@@ -80,7 +129,7 @@ const Ats = () => {
             </div>
             <br></br> 
               <div>
-             <Button  className='btn'  type='submit' color='primary'  variant='contained' style={btnstyle}fullWidth>Log in</Button>
+             <Button onClick={onsubmit} onSubmit={onSubmit} className='btn'  type='submit' color='primary'  variant='contained' style={btnstyle}fullWidth>Log in</Button>
              </div>
 
             <div>
@@ -88,7 +137,7 @@ const Ats = () => {
               {/* <Link href='#' underline='none'style={{textAlign:'left',marginLeft:"280px"}}>
                register
               </Link> */}
-              <Link to='/Register' onClick={hii} underline="none"style={{ textAlign: 'left', marginLeft: "280px" }}>
+              <Link to='/Register' onClick={hii} underline="none" style={{ textAlign: 'left', marginLeft: "280px" }}>
   register
 </Link>
             </Typography>
